@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Modulo5</string>
+
+    <string name="nombre_app">ALKI WALETT APP</string>
+    <string name="crear">Crear nueva cuenta</string>
+    <string name="tiene">Ya tiene cuenta?</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="ingNombre">Ingrese su Nombre</string>
+    <string name="apellido">APELLIDO</string>
+    <string name="ingApell">Ingrese su Apellido</string>
+    <string name="email">E-Mail</string>
+    <string name="ingemail">Ingrese su e-mail</string>
+    <string name="contra">Contraseña</string>
+    <string name="recontra">Reingresa tu Contraseña</string>
+    <string name="ingcontra">Ingrese su Contraseña</string>
+    <string name="olvidaste">Olvidaste tu Contraseña?</string>
+    <string name="login">HOME</string>
+    <string name="enviar">Enviar Dinero</string>
+    <string name="ingresar">  Ingresar Dinero</string>
+    <string name="slogan"> El lugar mas seguro para tu Dinero</string>
+
+</resources>

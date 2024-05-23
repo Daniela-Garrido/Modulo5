@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Modulo5" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:colorBackground">@color/white</item>
+        //color fondo
+        <item name="android:statusBarColor">@color/profundo</item>
+        //barra de arriba
+        <item name="android:navigationBarColor">@color/oscuro</item>
+        //barra de abajo
+        <item name="colorPrimary">@color/oscuro</item>
+        //color de los botones
+        <item name="colorSecondary">@color/medio</item>
+        <item name="android:textColor">@color/oscuro</item>
+        <item name="dividerColor">@color/acent</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <style name="btn">
+
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="btn2">
+
+        <item name="colorPrimary">@color/medio</item>
+    </style>
+
+    <style name="btn3">
+        <item name="colorPrimary">@color/acent</item>
+    </style>
+
+
+    <style name="Theme.Modulo5" parent="Base.Theme.Modulo5" />
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.aumentarte.modulo5.view.fragmentos.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ingresarFragment"
+        android:name="com.aumentarte.modulo5.view.fragmentos.IngresarFragment"
+        android:label="fragment_ingresar"
+        tools:layout="@layout/fragment_ingresar" >
+        <action
+            android:id="@+id/action_ingresarFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.aumentarte.modulo5.view.fragmentos.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_ingresarFragment"
+            app:destination="@id/ingresarFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_crearFragment"
+            app:destination="@id/crearFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearFragment"
+        android:name="com.aumentarte.modulo5.view.fragmentos.CrearFragment"
+        android:label="fragment_crear"
+        tools:layout="@layout/fragment_crear" >
+        <action
+            android:id="@+id/action_crearFragment_to_ingresarFragment"
+            app:destination="@id/ingresarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aumentarte.modulo5.view.fragmentos.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
