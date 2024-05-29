@@ -45,7 +45,7 @@ class InicioFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         CoroutineScope(Dispatchers.Main).launch {
-            delay(3000)
+            delay(1000)
             view.findNavController().navigate(R.id.action_inicioFragment_to_loginFragment2)
         }
     }

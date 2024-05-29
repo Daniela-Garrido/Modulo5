@@ -57,7 +57,7 @@
                 android:textColor="#FFFFFF" />
 
             <EditText
-                android:id="@+id/editTextName"
+                android:id="@+id/ingremail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:ems="10"
@@ -78,7 +78,7 @@
                 android:textColor="#FFFFFF" />
 
             <EditText
-                android:id="@+id/editTextTextPasswordIngresar"
+                android:id="@+id/ingrecontras"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:ems="10"
