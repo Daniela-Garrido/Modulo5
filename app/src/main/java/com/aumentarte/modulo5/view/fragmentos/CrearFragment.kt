@@ -48,6 +48,5 @@ class CrearFragment : Fragment() {
             binding.ingrecontra.setText(user.clave)
         })
 
-
     }
 }

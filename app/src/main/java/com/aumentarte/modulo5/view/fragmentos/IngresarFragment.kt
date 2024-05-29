@@ -46,22 +46,24 @@ class IngresarFragment : Fragment() {
 
         viewModel.isValid.observe(viewLifecycleOwner, Observer { isValid ->
             if (!isValid) {
-
                 Toast.makeText(requireContext(), "Ingrese Datos Válidos", Toast.LENGTH_SHORT).show()
-            }
-
-            binding.btnhome.setOnClickListener{
-                val email = binding.ingremail.text.toString()
-                val clave = binding.ingrecontras.text.toString()
-
-                viewModel.updateUser(email, clave)
-
-            }
-            if (viewModel.isValid.value == true) {
-                findNavController().navigate(R.id.action_ingresarFragment_to_homeFragment)
             }
 
         })
 
+        binding.btnhome.setOnClickListener {
+            val email = binding.ingremail.text.toString()
+            val clave = binding.ingrecontras.text.toString()
+
+            viewModel.updateUser(email, clave)
+            if (viewModel.isValid.value == true) {
+                findNavController().navigate(R.id.action_ingresarFragment_to_homeFragment)
+            }
+
+            binding.btncnueva.setOnClickListener {
+                findNavController().navigate(R.id.action_ingresarFragment_to_crearFragment)
+            }
+
+        }
     }
 }
