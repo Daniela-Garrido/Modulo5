@@ -46,7 +46,29 @@ class CrearFragment : Fragment() {
             binding.ingreseApellido.setText(user.apellido)
             binding.ingresemail.setText(user.email)
             binding.ingrecontra.setText(user.clave)
+
         })
+
+        viewModel.isValid.observe(viewLifecycleOwner, Observer { isValid ->
+            if (!isValid) {
+                Toast.makeText(requireContext(), "Ingrese Datos Válidos", Toast.LENGTH_SHORT).show()
+            }
+
+        })
+
+        binding.btncrearnueva.setOnClickListener{
+
+            val nombre = binding.ingresenombre.text.toString()
+            val apellido = binding.ingreseApellido.text.toString()
+            val email = binding.ingresemail.text.toString()
+            val clave = binding.ingrecontra.text.toString()
+            val recontra = binding.reincontra.text.toString()
+
+            viewModel.updateUser(nombre, apellido, email, clave)
+            if (viewModel.isValid.value == true) {
+                findNavController().navigate(R.id.action_crearFragment_to_ingresarFragment)
+            }
+        }
 
     }
 }

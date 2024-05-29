@@ -40,8 +40,8 @@ class IngresarFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.user.observe(viewLifecycleOwner, Observer { user ->
-            binding.ingremail.setText(user.nombre)
-            binding.ingrecontras.setText(user.apellido)
+            binding.ingremail.setText(user.first_name)
+            binding.ingrecontras.setText(user.password)
         })
 
         viewModel.isValid.observe(viewLifecycleOwner, Observer { isValid ->
