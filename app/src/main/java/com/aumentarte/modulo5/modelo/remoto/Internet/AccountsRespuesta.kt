@@ -1,6 +1,6 @@
 package com.aumentarte.modulo5.modelo.remoto.Internet
 
-data class AccountsInter(
+data class AccountsRespuesta(
     val id: Long,
     val creationDate: String,
     val money: String,
