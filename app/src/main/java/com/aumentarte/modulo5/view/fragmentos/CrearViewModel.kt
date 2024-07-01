@@ -24,10 +24,8 @@ class CrearViewModel : ViewModel() {
     private fun validateUser(user: UsuarioRespuesta) {
         val isNombreValid = user.first_name.isNotBlank()
         val isApellidoValid = user.last_name.isNotBlank()
-        val isEmailValid =
-            user.email?.let { android.util.Patterns.EMAIL_ADDRESS.matcher(it).matches() } ?: true
+        val isEmailValid = user.email?.let { android.util.Patterns.EMAIL_ADDRESS.matcher(it).matches() } ?: true
         val isClaveValid = user.password?.let { it.length >= 6 } ?: true
-
         _isValid.value = isNombreValid && isApellidoValid && isEmailValid && isClaveValid
     }
 }
