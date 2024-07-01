@@ -13,7 +13,7 @@ class IngresarViewModel : ViewModel() {
     private val _isValid = MutableLiveData<Boolean>()
     val isValid: LiveData<Boolean> get() = _isValid
 
-    fun updateUser(email: String?, clave: String?) {
+    fun updateUser(email:String?, clave:String?) {
         val newUser = UsuarioRespuesta(first_name = null.toString(), last_name = null.toString(), email = email, password = clave)
         _user.value = newUser
         validateUser(newUser)

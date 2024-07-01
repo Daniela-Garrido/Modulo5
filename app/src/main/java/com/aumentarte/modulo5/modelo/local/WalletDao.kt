@@ -33,5 +33,8 @@ interface WalletDao {
     @Query("SELECT * FROM tabla_transaccion WHERE userId= :userId")
     fun getTransaccionId(userId: Long): LiveData<List<TransaccionLocal>>
 
+    @Insert (onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTransaccion(transaccion: TransaccionLocal)
+
 
 }
